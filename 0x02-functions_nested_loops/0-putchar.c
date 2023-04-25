@@ -1,5 +1,5 @@
+#include "_putchar.h"
 
-#include "_putchar"
 int main(void)
 {
 	_putchar('H');
