@@ -1,34 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of three different digits in ascending order, separated by a comma followed by a space.
+ * main - print all numbers 012 to 789 where
+ * first numb < second numb < thrid numb
  *
- * Return: Always 0.
+ * Return: 0
  */
+
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int i, j, k;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (i = 0; i < 10; i++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (j = 0; j < 10; j++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (k = 0; k < 10; k++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-				
-				putchar(',');
-				putchar(' ');
+				if (i < j && j < k)
+				{
+					putchar(i + 48);
+					putchar(j + 48);
+					putchar(k + 48);
+					if (i < 7)
+					{
+						putchar(44);
+						putchar(32);
+					}
+				}
 			}
 		}
 	}
-
-	putchar('\n');
-
+	putchar(10);
 	return (0);
 }
