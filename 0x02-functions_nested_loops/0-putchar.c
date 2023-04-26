@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * main - Prints putchar
+ * @void: Empty parameter list for main.
+ *
+ *
+ * Return: 0 for success
+*/
+
 int main(void)
 {
 	_putchar('_');
@@ -13,4 +21,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
-}u
+}
