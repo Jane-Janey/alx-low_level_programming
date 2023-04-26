@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Prints putchar
+ * main - Prints _putchar followed by a new line
  * @void: Empty parameter list for main.
- *
+ * Description: Prints _putchar 
  *
  * Return: 0 for success
 */
