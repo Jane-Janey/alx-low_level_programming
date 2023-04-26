@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
- * main - Prints _putchar followed by a new line
- * @void: Empty parameter list for main.
- * Description: Prints _putchar 
- * Return: 0 for success
+ * main - print _putchar 
+ * 
+ * Return: 0 
 */
 
 int main(void)
@@ -18,6 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
